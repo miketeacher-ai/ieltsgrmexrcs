@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Academic Preparation – Tense Exercises (Band 5/5.5)</title>
+    <style>
+        :root {
+            --primary: #1a5276;
+            --primary-light: #2980b9;
+            --accent: #e67e22;
+            --accent-light: #f0a04b;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border: #dee2e6;
+            --text: #2c3e50;
+            --text-light: #555;
+            --correct: #27ae60;
+            --section-bg: #eef5fa;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.1);
+            --radius: 10px;
+            --radius-sm: 6px;
+            --transition: 0.2s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #eef2f7;
+            color: var(--text);
+            line-height: 1.7;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a3c4a 0%, #1a5276 40%, #1f6f8b 100%);
+            color: #fff;
+            padding: 28px 20px 22px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header h1 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin-bottom: 4px;
+        }
+        .header .subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        .header .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 6px;
+            letter-spacing: 0.4px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 16px 40px;
+        }
+
+        /* Section */
+        .section {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .section:hover {
+            box-shadow: var(--shadow-hover);
+        }
+        .section-header {
+            background: var(--section-bg);
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            flex-shrink: 0;
+            color: #fff;
+        }
+        .icon-ps {
+            background: #3498db;
+        }
+        .icon-pc {
+            background: #e74c3c;
+        }
+        .icon-pa {
+            background: #2ecc71;
+        }
+        .icon-pp {
+            background: #9b59b6;
+        }
+        .icon-wl {
+            background: #f39c12;
+        }
+        .icon-bg {
+            background: #1abc9c;
+        }
+        .section-header h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+        }
+        .section-header .q-range {
+            font-size: 0.8rem;
+            color: #777;
+            font-weight: 500;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+
+        /* Question list */
+        .q-list {
+            padding: 10px 20px 18px;
+        }
+        .question {
+            padding: 11px 14px;
+            margin: 4px 0;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            border-left: 3px solid transparent;
+        }
+        .question:nth-child(odd) {
+            background: #fafbfc;
+        }
+        .question:hover {
+            background: #f0f5fa;
+            border-left-color: var(--primary-light);
+        }
+        .q-num {
+            font-weight: 700;
+            color: var(--primary);
+            margin-right: 6px;
+            font-size: 0.9rem;
+            display: inline-block;
+            min-width: 28px;
+        }
+        .q-type-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 2px 7px;
+            border-radius: 10px;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        .tag-fill {
+            background: #eaf6ed;
+            color: #1e7e34;
+        }
+        .tag-mc {
+            background: #fef3e0;
+            color: #b86e0c;
+        }
+        .q-text {
+            margin: 4px 0;
+            font-size: 0.95rem;
+        }
+        .q-text .blank-input {
+            display: inline-block;
+            width: 130px;
+            padding: 5px 10px;
+            border: 2px solid #d0d7de;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-family: inherit;
+            transition: var(--transition);
+            background: #fff;
+            color: var(--text);
+            margin: 0 3px;
+            vertical-align: middle;
+        }
+        .q-text .blank-input:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.1);
+            background: #fefefe;
+        }
+        .mc-options {
+            margin-top: 6px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+        }
+        .mc-options label {
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            transition: var(--transition);
+            background: #fdfdfd;
+            border: 1px solid #e9ecef;
+        }
+        .mc-options label:hover {
+            background: #eef5fa;
+            border-color: #b0cde0;
+        }
+        .mc-options input[type="radio"] {
+            accent-color: var(--primary-light);
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+        }
+
+        /* Button bar */
+        .btn-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px 20px 24px;
+            position: sticky;
+            bottom: 16px;
+            z-index: 50;
+        }
+        .btn {
+            padding: 11px 24px;
+            border: none;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 0.3px;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            font-family: inherit;
+        }
+        .btn-toggle {
+            background: var(--accent);
+            color: #fff;
+        }
+        .btn-toggle:hover {
+            background: #d35400;
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-1px);
+        }
+        .btn-clear {
+            background: #fff;
+            color: var(--text);
+            border: 2px solid #ccc;
+        }
+        .btn-clear:hover {
+            background: #f0f0f0;
+            border-color: #999;
+            transform: translateY(-1px);
+        }
+        .btn-top {
+            background: var(--primary-light);
+            color: #fff;
+        }
+        .btn-top:hover {
+            background: #1a5276;
+            transform: translateY(-1px);
+        }
+
+        /* Answer key */
+        .answer-key {
+            max-width: 900px;
+            margin: 0 auto 40px;
+            padding: 0 16px;
+            display: none;
+        }
+        .answer-key.visible {
+            display: block;
+        }
+        .answer-card {
+            background: #fffef9;
+            border: 2px solid #e8d9a0;
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            box-shadow: var(--shadow);
+        }
+        .answer-card h3 {
+            color: #8b6914;
+            margin-bottom: 14px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 6px 16px;
+        }
+        .answer-item {
+            font-size: 0.85rem;
+            padding: 3px 0;
+            border-bottom: 1px dotted #e0d8c0;
+        }
+        .answer-item strong {
+            color: var(--primary);
+            margin-right: 4px;
+        }
+        .answer-item .ans {
+            color: #1e7e34;
+            font-weight: 600;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c1c9d2;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.3rem;
+            }
+            .q-text .blank-input {
+                width: 100px;
+            }
+            .mc-options {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .btn {
+                padding: 10px 18px;
+                font-size: 0.85rem;
+            }
+            .section-header {
+                flex-wrap: wrap;
+            }
+            .answer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>📝 IELTS Academic Tense Exercises</h1>
+        <p class="subtitle">Present Simple · Present Continuous · Past Simple · Present Perfect · Will · Be Going To</p>
+        <span class="badge">Band 5 / 5.5 · 100 Questions</span>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container" id="mainContainer">
+
+        <!-- ==================== SECTION A: PRESENT SIMPLE (Q1–Q16) ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon icon-ps">PS</div>
+                <h2>Section A: Present Simple</h2>
+                <span class="q-range">Questions 1–16</span>
+            </div>
+            <div class="q-list">
+
+                <!-- Q1 Fill -->
+                <div class="question">
+                    <span class="q-num">1.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">She
+                        <input type="text" class="blank-input" placeholder="work" data-answer="works"> as a research assistant at the university.
+                    </p>
+                </div>
+                <!-- Q2 Fill -->
+                <div class="question">
+                    <span class="q-num">2.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">The sun
+                        <input type="text" class="blank-input" placeholder="rise" data-answer="rises"> in the east every morning.
+                    </p>
+                </div>
+                <!-- Q3 Fill -->
+                <div class="question">
+                    <span class="q-num">3.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">Many students
+                        <input type="text" class="blank-input" placeholder="not/have" data-answer="do not have"> access to quality learning resources.
+                    </p>
+                </div>
+                <!-- Q4 Fill -->
+                <div class="question">
+                    <span class="q-num">4.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">
+                        <input type="text" class="blank-input" placeholder="teach?" data-answer="Does" style="width:80px;"> the professor
+                        <input type="text" class="blank-input" placeholder="teach" data-answer="teach" style="width:80px;"> on Fridays?
+                    </p>
+                </div>
+                <!-- Q5 Fill -->
+                <div class="question">
+                    <span class="q-num">5.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">Water
+                        <input type="text" class="blank-input" placeholder="boil" data-answer="boils"> at 100 degrees Celsius at sea level.
+                    </p>
+                </div>
+                <!-- Q6 Fill -->
+                <div class="question">
+                    <span class="q-num">6.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">He
+                        <input type="text" class="blank-input" placeholder="not/eat" data-answer="does not eat"> meat; he follows a vegetarian diet.
+                    </p>
+                </div>
+                <!-- Q7 Fill -->
+                <div class="question">
+                    <span class="q-num">7.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">The campus library
+                        <input type="text" class="blank-input" placeholder="open" data-answer="opens"> at 8:00 a.m. every weekday.
+                    </p>
+                </div>
+                <!-- Q8 Fill -->
+                <div class="question">
+                    <span class="q-num">8.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">
+                        <input type="text" class="blank-input" placeholder="live?" data-answer="Do" style="width:70px;"> they
+                        <input type="text" class="blank-input" placeholder="live" data-answer="live" style="width:70px;"> near the university campus?
+                    </p>
+                </div>
+
+                <!-- Q9 MC -->
+                <div class="question">
+                    <span class="q-num">9.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence is grammatically correct in the present simple?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q9" value="A"> A) She don't like coffee.</label>
+                        <label><input type="radio" name="q9" value="B"> B) She doesn't likes coffee.</label>
+                        <label><input type="radio" name="q9" value="C" data-correct="true"> C) She doesn't like coffee.</label>
+                        <label><input type="radio" name="q9" value="D"> D) She not like coffee.</label>
+                    </div>
+                </div>
+                <!-- Q10 MC -->
+                <div class="question">
+                    <span class="q-num">10.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">The research findings ___ that climate change is accelerating.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q10" value="A" data-correct="true"> A) show</label>
+                        <label><input type="radio" name="q10" value="B"> B) shows</label>
+                        <label><input type="radio" name="q10" value="C"> C) showing</label>
+                        <label><input type="radio" name="q10" value="D"> D) is show</label>
+                    </div>
+                </div>
+                <!-- Q11 MC -->
+                <div class="question">
+                    <span class="q-num">11.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">She ___ to the gym every morning before class.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q11" value="A"> A) go</label>
+                        <label><input type="radio" name="q11" value="B" data-correct="true"> B) goes</label>
+                        <label><input type="radio" name="q11" value="C"> C) gone</label>
+                        <label><input type="radio" name="q11" value="D"> D) going</label>
+                    </div>
+                </div>
+                <!-- Q12 MC -->
+                <div class="question">
+                    <span class="q-num">12.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence uses the present simple to express a general truth?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q12" value="A"> A) He is reading a book now.</label>
+                        <label><input type="radio" name="q12" value="B" data-correct="true"> B) The Earth orbits the Sun.</label>
+                        <label><input type="radio" name="q12" value="C"> C) She has finished her work.</label>
+                        <label><input type="radio" name="q12" value="D"> D) They are going to travel soon.</label>
+                    </div>
+                </div>
+                <!-- Q13 MC -->
+                <div class="question">
+                    <span class="q-num">13.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">He ___ any siblings; he is an only child.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q13" value="A"> A) don't have</label>
+                        <label><input type="radio" name="q13" value="B" data-correct="true"> B) doesn't have</label>
+                        <label><input type="radio" name="q13" value="C"> C) not have</label>
+                        <label><input type="radio" name="q13" value="D"> D) haven't</label>
+                    </div>
+                </div>
+                <!-- Q14 MC -->
+                <div class="question">
+                    <span class="q-num">14.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">___ your parents ___ English at home?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q14" value="A" data-correct="true"> A) Do ... speak</label>
+                        <label><input type="radio" name="q14" value="B"> B) Does ... speak</label>
+                        <label><input type="radio" name="q14" value="C"> C) Do ... speaks</label>
+                        <label><input type="radio" name="q14" value="D"> D) Does ... speaks</label>
+                    </div>
+                </div>
+                <!-- Q15 MC -->
+                <div class="question">
+                    <span class="q-num">15.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">The train ___ at 6 p.m. every evening according to the timetable.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q15" value="A"> A) leave</label>
+                        <label><input type="radio" name="q15" value="B" data-correct="true"> B) leaves</label>
+                        <label><input type="radio" name="q15" value="C"> C) leaving</label>
+                        <label><input type="radio" name="q15" value="D"> D) left</label>
+                    </div>
+                </div>
+                <!-- Q16 MC -->
+                <div class="question">
+                    <span class="q-num">16.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence is correct for a habitual action?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q16" value="A"> A) I am walking to school every day.</label>
+                        <label><input type="radio" name="q16" value="B" data-correct="true"> B) I walk to school every day.</label>
+                        <label><input type="radio" name="q16" value="C"> C) I walked to school every day.</label>
+                        <label><input type="radio" name="q16" value="D"> D) I have walked to school every day.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION B: PRESENT CONTINUOUS (Q17–Q32) ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon icon-pc">PC</div>
+                <h2>Section B: Present Continuous</h2>
+                <span class="q-range">Questions 17–32</span>
+            </div>
+            <div class="q-list">
+                <!-- Q17 Fill -->
+                <div class="question">
+                    <span class="q-num">17.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">She
+                        <input type="text" class="blank-input" placeholder="study" data-answer="is studying"> for her IELTS exam right now.
+                    </p>
+                </div>
+                <!-- Q18 Fill -->
+                <div class="question">
+                    <span class="q-num">18.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">They
+                        <input type="text" class="blank-input" placeholder="build" data-answer="are building"> a new research centre on campus.
+                    </p>
+                </div>
+                <!-- Q19 Fill -->
+                <div class="question">
+                    <span class="q-num">19.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">Look! The children
+                        <input type="text" class="blank-input" placeholder="play" data-answer="are playing"> in the park.
+                    </p>
+                </div>
+                <!-- Q20 Fill -->
+                <div class="question">
+                    <span class="q-num">20.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">I
+                        <input type="text" class="blank-input" placeholder="not/watch" data-answer="am not watching"> television at the moment.
+                    </p>
+                </div>
+                <!-- Q21 Fill -->
+                <div class="question">
+                    <span class="q-num">21.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">
+                        <input type="text" class="blank-input" placeholder="come?" data-answer="Is" style="width:70px;"> he
+                        <input type="text" class="blank-input" placeholder="come" data-answer="coming" style="width:80px;"> to the seminar later?
+                    </p>
+                </div>
+                <!-- Q22 Fill -->
+                <div class="question">
+                    <span class="q-num">22.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">The urban population
+                        <input type="text" class="blank-input" placeholder="grow" data-answer="is growing"> rapidly in many developing countries.
+                    </p>
+                </div>
+                <!-- Q23 Fill -->
+                <div class="question">
+                    <span class="q-num">23.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">We
+                        <input type="text" class="blank-input" placeholder="work" data-answer="are working"> on a collaborative project this semester.
+                    </p>
+                </div>
+                <!-- Q24 Fill -->
+                <div class="question">
+                    <span class="q-num">24.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">Why
+                        <input type="text" class="blank-input" placeholder="cry?" data-answer="are" style="width:65px;"> you
+                        <input type="text" class="blank-input" placeholder="cry" data-answer="crying" style="width:80px;">? What happened?
+                    </p>
+                </div>
+                <!-- Q25 MC -->
+                <div class="question">
+                    <span class="q-num">25.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence correctly uses the present continuous?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q25" value="A"> A) She is knowing the answer.</label>
+                        <label><input type="radio" name="q25" value="B" data-correct="true"> B) She is reading a journal article.</label>
+                        <label><input type="radio" name="q25" value="C"> C) She is wanting a new laptop.</label>
+                        <label><input type="radio" name="q25" value="D"> D) She is believing in hard work.</label>
+                    </div>
+                </div>
+                <!-- Q26 MC -->
+                <div class="question">
+                    <span class="q-num">26.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence describes an action happening at the moment of speaking?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q26" value="A"> A) I eat breakfast at 7 a.m.</label>
+                        <label><input type="radio" name="q26" value="B" data-correct="true"> B) I am eating breakfast now.</label>
+                        <label><input type="radio" name="q26" value="C"> C) I have eaten breakfast.</label>
+                        <label><input type="radio" name="q26" value="D"> D) I will eat breakfast later.</label>
+                    </div>
+                </div>
+                <!-- Q27 MC -->
+                <div class="question">
+                    <span class="q-num">27.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">She ___ for her final exams these days.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q27" value="A" data-correct="true"> A) is preparing</label>
+                        <label><input type="radio" name="q27" value="B"> B) are preparing</label>
+                        <label><input type="radio" name="q27" value="C"> C) prepares</label>
+                        <label><input type="radio" name="q27" value="D"> D) prepare</label>
+                    </div>
+                </div>
+                <!-- Q28 MC -->
+                <div class="question">
+                    <span class="q-num">28.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Listen! Someone ___ at the door.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q28" value="A"> A) knocks</label>
+                        <label><input type="radio" name="q28" value="B" data-correct="true"> B) is knocking</label>
+                        <label><input type="radio" name="q28" value="C"> C) knocked</label>
+                        <label><input type="radio" name="q28" value="D"> D) has knocked</label>
+                    </div>
+                </div>
+                <!-- Q29 MC -->
+                <div class="question">
+                    <span class="q-num">29.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">They ___ to a new apartment next month.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q29" value="A"> A) move</label>
+                        <label><input type="radio" name="q29" value="B" data-correct="true"> B) are moving</label>
+                        <label><input type="radio" name="q29" value="C"> C) moves</label>
+                        <label><input type="radio" name="q29" value="D"> D) moved</label>
+                    </div>
+                </div>
+                <!-- Q30 MC -->
+                <div class="question">
+                    <span class="q-num">30.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">I can't talk right now; I ___ dinner.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q30" value="A"> A) cook</label>
+                        <label><input type="radio" name="q30" value="B" data-correct="true"> B) am cooking</label>
+                        <label><input type="radio" name="q30" value="C"> C) cooked</label>
+                        <label><input type="radio" name="q30" value="D"> D) have cooked</label>
+                    </div>
+                </div>
+                <!-- Q31 MC -->
+                <div class="question">
+                    <span class="q-num">31.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">It ___ outside; take an umbrella.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q31" value="A" data-correct="true"> A) is raining</label>
+                        <label><input type="radio" name="q31" value="B"> B) are raining</label>
+                        <label><input type="radio" name="q31" value="C"> C) rains</label>
+                        <label><input type="radio" name="q31" value="D"> D) rained</label>
+                    </div>
+                </div>
+                <!-- Q32 MC -->
+                <div class="question">
+                    <span class="q-num">32.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">The economic situation ___ worse each month.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q32" value="A"> A) gets</label>
+                        <label><input type="radio" name="q32" value="B" data-correct="true"> B) is getting</label>
+                        <label><input type="radio" name="q32" value="C"> C) got</label>
+                        <label><input type="radio" name="q32" value="D"> D) has got</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION C: PAST SIMPLE (Q33–Q48) ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon icon-pa">PA</div>
+                <h2>Section C: Past Simple</h2>
+                <span class="q-range">Questions 33–48</span>
+            </div>
+            <div class="q-list">
+                <!-- Q33 Fill -->
+                <div class="question">
+                    <span class="q-num">33.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">She
+                        <input type="text" class="blank-input" placeholder="graduate" data-answer="graduated"> from university in 2019.
+                    </p>
+                </div>
+                <!-- Q34 Fill -->
+                <div class="question">
+                    <span class="q-num">34.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">They
+                        <input type="text" class="blank-input" placeholder="not/go" data-answer="did not go"> to the academic conference yesterday.
+                    </p>
+                </div>
+                <!-- Q35 Fill -->
+                <div class="question">
+                    <span class="q-num">35.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">
+                        <input type="text" class="blank-input" placeholder="see?" data-answer="Did" style="width:70px;"> you
+                        <input type="text" class="blank-input" placeholder="see" data-answer="see" style="width:70px;"> the news report this morning?
+                    </p>
+                </div>
+                <!-- Q36 Fill -->
+                <div class="question">
+                    <span class="q-num">36.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">He
+                        <input type="text" class="blank-input" placeholder="write" data-answer="wrote"> three research papers during his PhD in 2020.
+                    </p>
+                </div>
+                <!-- Q37 Fill -->
+                <div class="question">
+                    <span class="q-num">37.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">The incident
+                        <input type="text" class="blank-input" placeholder="happen" data-answer="happened"> late at night near the city centre.
+                    </p>
+                </div>
+                <!-- Q38 Fill -->
+                <div class="question">
+                    <span class="q-num">38.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">We
+                        <input type="text" class="blank-input" placeholder="not/know" data-answer="did not know"> about the policy changes until last week.
+                    </p>
+                </div>
+                <!-- Q39 Fill -->
+                <div class="question">
+                    <span class="q-num">39.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">
+                        <input type="text" class="blank-input" placeholder="teach?" data-answer="Did" style="width:65px;"> she
+                        <input type="text" class="blank-input" placeholder="teach" data-answer="teach" style="width:70px;"> at this institution before?
+                    </p>
+                </div>
+                <!-- Q40 Fill -->
+                <div class="question">
+                    <span class="q-num">40.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">I
+                        <input type="text" class="blank-input" placeholder="buy" data-answer="bought"> a new laptop two days ago.
+                    </p>
+                </div>
+                <!-- Q41 MC -->
+                <div class="question">
+                    <span class="q-num">41.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">What is the past simple form of 'go'?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q41" value="A"> A) goed</label>
+                        <label><input type="radio" name="q41" value="B" data-correct="true"> B) went</label>
+                        <label><input type="radio" name="q41" value="C"> C) gone</label>
+                        <label><input type="radio" name="q41" value="D"> D) going</label>
+                    </div>
+                </div>
+                <!-- Q42 MC -->
+                <div class="question">
+                    <span class="q-num">42.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">She ___ breakfast before she left the house.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q42" value="A"> A) eats</label>
+                        <label><input type="radio" name="q42" value="B" data-correct="true"> B) ate</label>
+                        <label><input type="radio" name="q42" value="C"> C) eaten</label>
+                        <label><input type="radio" name="q42" value="D"> D) eating</label>
+                    </div>
+                </div>
+                <!-- Q43 MC -->
+                <div class="question">
+                    <span class="q-num">43.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">They ___ the film last night because they were tired.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q43" value="A"> A) didn't enjoyed</label>
+                        <label><input type="radio" name="q43" value="B" data-correct="true"> B) didn't enjoy</label>
+                        <label><input type="radio" name="q43" value="C"> C) not enjoyed</label>
+                        <label><input type="radio" name="q43" value="D"> D) don't enjoy</label>
+                    </div>
+                </div>
+                <!-- Q44 MC -->
+                <div class="question">
+                    <span class="q-num">44.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">___ he ___ the assignment on time?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q44" value="A" data-correct="true"> A) Did ... submit</label>
+                        <label><input type="radio" name="q44" value="B"> B) Does ... submit</label>
+                        <label><input type="radio" name="q44" value="C"> C) Did ... submitted</label>
+                        <label><input type="radio" name="q44" value="D"> D) Has ... submitted</label>
+                    </div>
+                </div>
+                <!-- Q45 MC -->
+                <div class="question">
+                    <span class="q-num">45.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">When ___ you ___ to Australia?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q45" value="A"> A) did ... moved</label>
+                        <label><input type="radio" name="q45" value="B" data-correct="true"> B) did ... move</label>
+                        <label><input type="radio" name="q45" value="C"> C) do ... move</label>
+                        <label><input type="radio" name="q45" value="D"> D) were ... move</label>
+                    </div>
+                </div>
+                <!-- Q46 MC -->
+                <div class="question">
+                    <span class="q-num">46.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">What is the past simple form of 'teach'?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q46" value="A"> A) teached</label>
+                        <label><input type="radio" name="q46" value="B" data-correct="true"> B) taught</label>
+                        <label><input type="radio" name="q46" value="C"> C) teaches</label>
+                        <label><input type="radio" name="q46" value="D"> D) teaching</label>
+                    </div>
+                </div>
+                <!-- Q47 MC -->
+                <div class="question">
+                    <span class="q-num">47.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">The students ___ very hard during the last semester.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q47" value="A"> A) work</label>
+                        <label><input type="radio" name="q47" value="B"> B) works</label>
+                        <label><input type="radio" name="q47" value="C" data-correct="true"> C) worked</label>
+                        <label><input type="radio" name="q47" value="D"> D) working</label>
+                    </div>
+                </div>
+                <!-- Q48 MC -->
+                <div class="question">
+                    <span class="q-num">48.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">I accidentally ___ my keys at the library yesterday.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q48" value="A"> A) lose</label>
+                        <label><input type="radio" name="q48" value="B" data-correct="true"> B) lost</label>
+                        <label><input type="radio" name="q48" value="C"> C) losed</label>
+                        <label><input type="radio" name="q48" value="D"> D) losing</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION D: PRESENT PERFECT (Q49–Q66) ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon icon-pp">PP</div>
+                <h2>Section D: Present Perfect</h2>
+                <span class="q-range">Questions 49–66</span>
+            </div>
+            <div class="q-list">
+                <!-- Q49 Fill -->
+                <div class="question">
+                    <span class="q-num">49.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">She
+                        <input type="text" class="blank-input" placeholder="finish" data-answer="has finished"> her research proposal already.
+                    </p>
+                </div>
+                <!-- Q50 Fill -->
+                <div class="question">
+                    <span class="q-num">50.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">I
+                        <input type="text" class="blank-input" placeholder="visit" data-answer="have visited"> three different countries so far this year.
+                    </p>
+                </div>
+                <!-- Q51 Fill -->
+                <div class="question">
+                    <span class="q-num">51.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">They
+                        <input type="text" class="blank-input" placeholder="not/see" data-answer="have not seen"> that documentary yet.
+                    </p>
+                </div>
+                <!-- Q52 Fill -->
+                <div class="question">
+                    <span class="q-num">52.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">
+                        <input type="text" class="blank-input" placeholder="be?" data-answer="Have" style="width:70px;"> you ever
+                        <input type="text" class="blank-input" placeholder="be" data-answer="been" style="width:70px;"> to London?
+                    </p>
+                </div>
+                <!-- Q53 Fill -->
+                <div class="question">
+                    <span class="q-num">53.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">He
+                        <input type="text" class="blank-input" placeholder="work" data-answer="has worked"> at this institution since 2015.
+                    </p>
+                </div>
+                <!-- Q54 Fill -->
+                <div class="question">
+                    <span class="q-num">54.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">The committee
+                        <input type="text" class="blank-input" placeholder="not/announce" data-answer="has not announced"> the final results yet.
+                    </p>
+                </div>
+                <!-- Q55 Fill -->
+                <div class="question">
+                    <span class="q-num">55.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">We
+                        <input type="text" class="blank-input" placeholder="live" data-answer="have lived"> in this city for over ten years.
+                    </p>
+                </div>
+                <!-- Q56 Fill -->
+                <div class="question">
+                    <span class="q-num">56.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">She
+                        <input type="text" class="blank-input" placeholder="just/arrive" data-answer="has just arrived"> at the airport.
+                    </p>
+                </div>
+                <!-- Q57 Fill -->
+                <div class="question">
+                    <span class="q-num">57.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">How long
+                        <input type="text" class="blank-input" placeholder="know?" data-answer="have" style="width:70px;"> you
+                        <input type="text" class="blank-input" placeholder="know" data-answer="known" style="width:70px;"> about this issue?
+                    </p>
+                </div>
+                <!-- Q58 MC -->
+                <div class="question">
+                    <span class="q-num">58.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence correctly uses the present perfect?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q58" value="A"> A) I have seen him yesterday.</label>
+                        <label><input type="radio" name="q58" value="B" data-correct="true"> B) I have just seen him.</label>
+                        <label><input type="radio" name="q58" value="C"> C) I have seen him last week.</label>
+                        <label><input type="radio" name="q58" value="D"> D) I have seen him in 2010.</label>
+                    </div>
+                </div>
+                <!-- Q59 MC -->
+                <div class="question">
+                    <span class="q-num">59.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">She ___ her homework already, so she can relax now.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q59" value="A" data-correct="true"> A) has completed</label>
+                        <label><input type="radio" name="q59" value="B"> B) have completed</label>
+                        <label><input type="radio" name="q59" value="C"> C) completed</label>
+                        <label><input type="radio" name="q59" value="D"> D) completes</label>
+                    </div>
+                </div>
+                <!-- Q60 MC -->
+                <div class="question">
+                    <span class="q-num">60.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">I ___ him since we were children.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q60" value="A" data-correct="true"> A) have known</label>
+                        <label><input type="radio" name="q60" value="B"> B) knew</label>
+                        <label><input type="radio" name="q60" value="C"> C) knows</label>
+                        <label><input type="radio" name="q60" value="D"> D) known</label>
+                    </div>
+                </div>
+                <!-- Q61 MC -->
+                <div class="question">
+                    <span class="q-num">61.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">They ___ to the new office yet.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q61" value="A" data-correct="true"> A) haven't moved</label>
+                        <label><input type="radio" name="q61" value="B"> B) didn't move</label>
+                        <label><input type="radio" name="q61" value="C"> C) aren't moving</label>
+                        <label><input type="radio" name="q61" value="D"> D) don't move</label>
+                    </div>
+                </div>
+                <!-- Q62 MC -->
+                <div class="question">
+                    <span class="q-num">62.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">___ you ever ___ sushi?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q62" value="A" data-correct="true"> A) Have ... eaten</label>
+                        <label><input type="radio" name="q62" value="B"> B) Did ... eat</label>
+                        <label><input type="radio" name="q62" value="C"> C) Do ... eat</label>
+                        <label><input type="radio" name="q62" value="D"> D) Are ... eating</label>
+                    </div>
+                </div>
+                <!-- Q63 MC -->
+                <div class="question">
+                    <span class="q-num">63.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">He ___ at this university for five years and still enjoys it.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q63" value="A" data-correct="true"> A) has worked</label>
+                        <label><input type="radio" name="q63" value="B"> B) worked</label>
+                        <label><input type="radio" name="q63" value="C"> C) works</label>
+                        <label><input type="radio" name="q63" value="D"> D) is working</label>
+                    </div>
+                </div>
+                <!-- Q64 MC -->
+                <div class="question">
+                    <span class="q-num">64.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">We ___ each other for a very long time.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q64" value="A" data-correct="true"> A) have known</label>
+                        <label><input type="radio" name="q64" value="B"> B) knew</label>
+                        <label><input type="radio" name="q64" value="C"> C) had known</label>
+                        <label><input type="radio" name="q64" value="D"> D) know</label>
+                    </div>
+                </div>
+                <!-- Q65 MC -->
+                <div class="question">
+                    <span class="q-num">65.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">She ___ just ___ the breaking news.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q65" value="A" data-correct="true"> A) has ... heard</label>
+                        <label><input type="radio" name="q65" value="B"> B) have ... heard</label>
+                        <label><input type="radio" name="q65" value="C"> C) did ... hear</label>
+                        <label><input type="radio" name="q65" value="D"> D) was ... hearing</label>
+                    </div>
+                </div>
+                <!-- Q66 MC -->
+                <div class="question">
+                    <span class="q-num">66.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence is grammatically correct?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q66" value="A" data-correct="true"> A) I have never been to Japan.</label>
+                        <label><input type="radio" name="q66" value="B"> B) I never have been to Japan.</label>
+                        <label><input type="radio" name="q66" value="C"> C) I have never went to Japan.</label>
+                        <label><input type="radio" name="q66" value="D"> D) I never been to Japan.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION E: WILL (Q67–Q83) ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon icon-wl">WL</div>
+                <h2>Section E: Will (Future)</h2>
+                <span class="q-range">Questions 67–83</span>
+            </div>
+            <div class="q-list">
+                <!-- Q67 Fill -->
+                <div class="question">
+                    <span class="q-num">67.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">I think it
+                        <input type="text" class="blank-input" placeholder="rain" data-answer="will rain"> tomorrow based on the forecast.
+                    </p>
+                </div>
+                <!-- Q68 Fill -->
+                <div class="question">
+                    <span class="q-num">68.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">She
+                        <input type="text" class="blank-input" placeholder="probably/arrive" data-answer="will probably arrive"> late due to the traffic.
+                    </p>
+                </div>
+                <!-- Q69 Fill -->
+                <div class="question">
+                    <span class="q-num">69.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">They
+                        <input type="text" class="blank-input" placeholder="not/come" data-answer="will not come"> to the event tonight.
+                    </p>
+                </div>
+                <!-- Q70 Fill -->
+                <div class="question">
+                    <span class="q-num">70.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">
+                        <input type="text" class="blank-input" placeholder="help?" data-answer="Will" style="width:70px;"> you
+                        <input type="text" class="blank-input" placeholder="help" data-answer="help" style="width:70px;"> me with this challenging task?
+                    </p>
+                </div>
+                <!-- Q71 Fill -->
+                <div class="question">
+                    <span class="q-num">71.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">The flight
+                        <input type="text" class="blank-input" placeholder="leave" data-answer="will leave"> at 9 o'clock sharp.
+                    </p>
+                </div>
+                <!-- Q72 Fill -->
+                <div class="question">
+                    <span class="q-num">72.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">I promise I
+                        <input type="text" class="blank-input" placeholder="call" data-answer="will call"> you as soon as I arrive.
+                    </p>
+                </div>
+                <!-- Q73 Fill -->
+                <div class="question">
+                    <span class="q-num">73.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">In the future, more commuters
+                        <input type="text" class="blank-input" placeholder="use" data-answer="will use"> electric vehicles.
+                    </p>
+                </div>
+                <!-- Q74 Fill -->
+                <div class="question">
+                    <span class="q-num">74.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">I
+                        <input type="text" class="blank-input" placeholder="not/forget" data-answer="will not forget"> your generosity.
+                    </p>
+                </div>
+                <!-- Q75 MC -->
+                <div class="question">
+                    <span class="q-num">75.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence expresses a future prediction?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q75" value="A"> A) I am eating lunch now.</label>
+                        <label><input type="radio" name="q75" value="B"> B) She has arrived.</label>
+                        <label><input type="radio" name="q75" value="C" data-correct="true"> C) It will probably snow tonight.</label>
+                        <label><input type="radio" name="q75" value="D"> D) They went to the museum.</label>
+                    </div>
+                </div>
+                <!-- Q76 MC -->
+                <div class="question">
+                    <span class="q-num">76.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">I believe she ___ the IELTS exam with a good score.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q76" value="A" data-correct="true"> A) will pass</label>
+                        <label><input type="radio" name="q76" value="B"> B) passes</label>
+                        <label><input type="radio" name="q76" value="C"> C) passed</label>
+                        <label><input type="radio" name="q76" value="D"> D) is passing</label>
+                    </div>
+                </div>
+                <!-- Q77 MC -->
+                <div class="question">
+                    <span class="q-num">77.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Don't worry; I ___ you with the presentation.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q77" value="A" data-correct="true"> A) will help</label>
+                        <label><input type="radio" name="q77" value="B"> B) help</label>
+                        <label><input type="radio" name="q77" value="C"> C) helped</label>
+                        <label><input type="radio" name="q77" value="D"> D) am helping</label>
+                    </div>
+                </div>
+                <!-- Q78 MC -->
+                <div class="question">
+                    <span class="q-num">78.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">___ they ___ on time for the lecture?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q78" value="A" data-correct="true"> A) Will ... arrive</label>
+                        <label><input type="radio" name="q78" value="B"> B) Do ... arrive</label>
+                        <label><input type="radio" name="q78" value="C"> C) Did ... arrive</label>
+                        <label><input type="radio" name="q78" value="D"> D) Are ... arriving</label>
+                    </div>
+                </div>
+                <!-- Q79 MC -->
+                <div class="question">
+                    <span class="q-num">79.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">She ___ probably ___ the scholarship offer.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q79" value="A" data-correct="true"> A) will ... accept</label>
+                        <label><input type="radio" name="q79" value="B"> B) is ... accept</label>
+                        <label><input type="radio" name="q79" value="C"> C) has ... accepted</label>
+                        <label><input type="radio" name="q79" value="D"> D) was ... accepting</label>
+                    </div>
+                </div>
+                <!-- Q80 MC -->
+                <div class="question">
+                    <span class="q-num">80.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence shows a spontaneous decision?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q80" value="A" data-correct="true"> A) The phone is ringing — I'll answer it!</label>
+                        <label><input type="radio" name="q80" value="B"> B) I answer the phone every day.</label>
+                        <label><input type="radio" name="q80" value="C"> C) I'm answering the phone now.</label>
+                        <label><input type="radio" name="q80" value="D"> D) I answered the phone earlier.</label>
+                    </div>
+                </div>
+                <!-- Q81 MC -->
+                <div class="question">
+                    <span class="q-num">81.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">By 2050, artificial intelligence ___ many routine jobs.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q81" value="A" data-correct="true"> A) will do</label>
+                        <label><input type="radio" name="q81" value="B"> B) do</label>
+                        <label><input type="radio" name="q81" value="C"> C) did</label>
+                        <label><input type="radio" name="q81" value="D"> D) are doing</label>
+                    </div>
+                </div>
+                <!-- Q82 MC -->
+                <div class="question">
+                    <span class="q-num">82.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">I ___ be there on time, I promise you.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q82" value="A" data-correct="true"> A) will</label>
+                        <label><input type="radio" name="q82" value="B"> B) would</label>
+                        <label><input type="radio" name="q82" value="C"> C) am</label>
+                        <label><input type="radio" name="q82" value="D"> D) can</label>
+                    </div>
+                </div>
+                <!-- Q83 MC -->
+                <div class="question">
+                    <span class="q-num">83.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">What is the correct negative form of 'will go'?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q83" value="A"> A) will not go / won't go</label>
+                        <label><input type="radio" name="q83" value="B"> B) will not going</label>
+                        <label><input type="radio" name="q83" value="C"> C) not will go</label>
+                        <label><input type="radio" name="q83" value="D"> D) won't going</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION F: BE GOING TO (Q84–Q100) ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon icon-bg">BG</div>
+                <h2>Section F: Be Going To</h2>
+                <span class="q-range">Questions 84–100</span>
+            </div>
+            <div class="q-list">
+                <!-- Q84 Fill -->
+                <div class="question">
+                    <span class="q-num">84.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">Look at those dark clouds! It
+                        <input type="text" class="blank-input" placeholder="rain" data-answer="is going to rain"> soon.
+                    </p>
+                </div>
+                <!-- Q85 Fill -->
+                <div class="question">
+                    <span class="q-num">85.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">I
+                        <input type="text" class="blank-input" placeholder="buy" data-answer="am going to buy"> a new laptop next month.
+                    </p>
+                </div>
+                <!-- Q86 Fill -->
+                <div class="question">
+                    <span class="q-num">86.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">She
+                        <input type="text" class="blank-input" placeholder="not/apply" data-answer="is not going to apply"> for that scholarship after all.
+                    </p>
+                </div>
+                <!-- Q87 Fill -->
+                <div class="question">
+                    <span class="q-num">87.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">
+                        <input type="text" class="blank-input" placeholder="move?" data-answer="Are" style="width:65px;"> they
+                        <input type="text" class="blank-input" placeholder="move" data-answer="going to move" style="width:110px;"> to a new campus next year?
+                    </p>
+                </div>
+                <!-- Q88 Fill -->
+                <div class="question">
+                    <span class="q-num">88.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">We
+                        <input type="text" class="blank-input" placeholder="have" data-answer="are going to have"> dinner at a new restaurant tonight.
+                    </p>
+                </div>
+                <!-- Q89 Fill -->
+                <div class="question">
+                    <span class="q-num">89.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">He
+                        <input type="text" class="blank-input" placeholder="study" data-answer="is going to study"> medicine at a prestigious university.
+                    </p>
+                </div>
+                <!-- Q90 Fill -->
+                <div class="question">
+                    <span class="q-num">90.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">The organisation
+                        <input type="text" class="blank-input" placeholder="launch" data-answer="is going to launch"> a new community programme soon.
+                    </p>
+                </div>
+                <!-- Q91 Fill -->
+                <div class="question">
+                    <span class="q-num">91.</span><span class="q-type-tag tag-fill">Fill in</span>
+                    <p class="q-text">I
+                        <input type="text" class="blank-input" placeholder="not/tell" data-answer="am not going to tell"> anyone about your plans.
+                    </p>
+                </div>
+                <!-- Q92 MC -->
+                <div class="question">
+                    <span class="q-num">92.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which sentence best shows a planned intention?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q92" value="A"> A) I will maybe travel next year.</label>
+                        <label><input type="radio" name="q92" value="B" data-correct="true"> B) I am going to travel to France next summer.</label>
+                        <label><input type="radio" name="q92" value="C"> C) I travel to France sometimes.</label>
+                        <label><input type="radio" name="q92" value="D"> D) I have travelled to France.</label>
+                    </div>
+                </div>
+                <!-- Q93 MC -->
+                <div class="question">
+                    <span class="q-num">93.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Look at that speeding car! It ___ crash!</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q93" value="A" data-correct="true"> A) is going to</label>
+                        <label><input type="radio" name="q93" value="B"> B) will</label>
+                        <label><input type="radio" name="q93" value="C"> C) is</label>
+                        <label><input type="radio" name="q93" value="D"> D) was</label>
+                    </div>
+                </div>
+                <!-- Q94 MC -->
+                <div class="question">
+                    <span class="q-num">94.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">We ___ visit our grandparents this weekend.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q94" value="A" data-correct="true"> A) are going to</label>
+                        <label><input type="radio" name="q94" value="B"> B) will</label>
+                        <label><input type="radio" name="q94" value="C"> C) are</label>
+                        <label><input type="radio" name="q94" value="D"> D) were</label>
+                    </div>
+                </div>
+                <!-- Q95 MC -->
+                <div class="question">
+                    <span class="q-num">95.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">She ___ buy a new smartphone next month.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q95" value="A" data-correct="true"> A) is going to</label>
+                        <label><input type="radio" name="q95" value="B"> B) will</label>
+                        <label><input type="radio" name="q95" value="C"> C) has</label>
+                        <label><input type="radio" name="q95" value="D"> D) is</label>
+                    </div>
+                </div>
+                <!-- Q96 MC -->
+                <div class="question">
+                    <span class="q-num">96.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">___ you ___ attend the academic workshop?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q96" value="A" data-correct="true"> A) Are ... going to</label>
+                        <label><input type="radio" name="q96" value="B"> B) Will ... going to</label>
+                        <label><input type="radio" name="q96" value="C"> C) Do ... go to</label>
+                        <label><input type="radio" name="q96" value="D"> D) Did ... go to</label>
+                    </div>
+                </div>
+                <!-- Q97 MC -->
+                <div class="question">
+                    <span class="q-num">97.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">I ___ study harder next semester to improve my grades.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q97" value="A" data-correct="true"> A) am going to</label>
+                        <label><input type="radio" name="q97" value="B"> B) will going to</label>
+                        <label><input type="radio" name="q97" value="C"> C) going to</label>
+                        <label><input type="radio" name="q97" value="D"> D) go to</label>
+                    </div>
+                </div>
+                <!-- Q98 MC -->
+                <div class="question">
+                    <span class="q-num">98.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">They ___ get married in June; the venue is already booked.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q98" value="A" data-correct="true"> A) are going to</label>
+                        <label><input type="radio" name="q98" value="B"> B) is going to</label>
+                        <label><input type="radio" name="q98" value="C"> C) will going to</label>
+                        <label><input type="radio" name="q98" value="D"> D) going</label>
+                    </div>
+                </div>
+                <!-- Q99 MC -->
+                <div class="question">
+                    <span class="q-num">99.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">Which structure is typically used for predictions based on visible evidence?</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q99" value="A"> A) will</label>
+                        <label><input type="radio" name="q99" value="B" data-correct="true"> B) be going to</label>
+                        <label><input type="radio" name="q99" value="C"> C) present simple</label>
+                        <label><input type="radio" name="q99" value="D"> D) past simple</label>
+                    </div>
+                </div>
+                <!-- Q100 MC -->
+                <div class="question">
+                    <span class="q-num">100.</span><span class="q-type-tag tag-mc">Multiple Choice</span>
+                    <p class="q-text">He ___ not going to pass if he doesn't study more diligently.</p>
+                    <div class="mc-options">
+                        <label><input type="radio" name="q100" value="A" data-correct="true"> A) is</label>
+                        <label><input type="radio" name="q100" value="B"> B) are</label>
+                        <label><input type="radio" name="q100" value="C"> C) will</label>
+                        <label><input type="radio" name="q100" value="D"> D) has</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BUTTON BAR -->
+        <div class="btn-bar">
+            <button class="btn btn-toggle" id="btnToggleAnswers" title="Show/Hide Answer Key">🔑 Show Answer Key</button>
+            <button class="btn btn-clear" id="btnClearAll" title="Clear all your answers">🔄 Clear All Answers</button>
+            <button class="btn btn-top" id="btnScrollTop" title="Scroll to top">⬆ Back to Top</button>
+        </div>
+
+    </div>
+
+    <!-- ANSWER KEY (Hidden by default) -->
+    <div class="answer-key" id="answerKey">
+        <div class="answer-card">
+            <h3>📋 Answer Key – All 100 Questions</h3>
+            <div class="answer-grid" id="answerGrid"></div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            // --- Build the answer key dynamically ---
+            const answerGrid = document.getElementById('answerGrid');
+
+            // Fill-in-the-blank answers from data-answer attributes
+            const fillInputs = document.querySelectorAll('.blank-input[data-answer]');
+            const fillAnswers = [];
+            fillInputs.forEach(inp => {
+                const qNum = inp.closest('.question').querySelector('.q-num').textContent.trim().replace(
+                    '.', '');
+                fillAnswers.push({ num: parseInt(qNum), answer: inp.dataset.answer, type: 'fill' });
+            });
+
+            // Multiple choice answers from data-correct="true"
+            const mcQuestions = document.querySelectorAll('.question:has(.mc-options)');
+            const mcAnswers = [];
+            mcQuestions.forEach(q => {
+                const qNum = q.querySelector('.q-num').textContent.trim().replace('.', '');
+                const correctRadio = q.querySelector('input[data-correct="true"]');
+                if (correctRadio) {
+                    const label = correctRadio.closest('label');
+                    const letter = correctRadio.value;
+                    const fullText = label ? label.textContent.trim() : letter;
+                    mcAnswers.push({ num: parseInt(qNum), answer: fullText, type: 'mc' });
+                }
+            });
+
+            // Merge and sort all answers
+            const allAnswers = [...fillAnswers, ...mcAnswers].sort((a, b) => a.num - b.num);
+
+            // Render answer grid
+            allAnswers.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'answer-item';
+                div.innerHTML = `<strong>Q${item.num}:</strong> <span class="ans">${item.answer}</span>`;
+                answerGrid.appendChild(div);
+            });
+
+            // --- Toggle Answer Key ---
+            const answerKeyDiv = document.getElementById('answerKey');
+            const btnToggle = document.getElementById('btnToggleAnswers');
+            let answersVisible = false;
+
+            btnToggle.addEventListener('click', () => {
+                answersVisible = !answersVisible;
+                if (answersVisible) {
+                    answerKeyDiv.classList.add('visible');
+                    btnToggle.textContent = '🙈 Hide Answer Key';
+                    btnToggle.style.background = '#27ae60';
+                } else {
+                    answerKeyDiv.classList.remove('visible');
+                    btnToggle.textContent = '🔑 Show Answer Key';
+                    btnToggle.style.background = '#e67e22';
+                }
+                // Smooth scroll to answer key if showing
+                if (answersVisible) {
+                    answerKeyDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+
+            // --- Clear All Answers ---
+            const btnClear = document.getElementById('btnClearAll');
+            btnClear.addEventListener('click', () => {
+                // Clear all text inputs
+                const allInputs = document.querySelectorAll('.blank-input');
+                allInputs.forEach(inp => { inp.value = ''; });
+
+                // Clear all radio buttons
+                const allRadios = document.querySelectorAll('input[type="radio"]');
+                allRadios.forEach(radio => { radio.checked = false; });
+
+                // Visual feedback
+                btnClear.textContent = '✅ Cleared!';
+                btnClear.style.background = '#e8f5e9';
+                btnClear.style.borderColor = '#27ae60';
+                setTimeout(() => {
+                    btnClear.textContent = '🔄 Clear All Answers';
+                    btnClear.style.background = '#fff';
+                    btnClear.style.borderColor = '#ccc';
+                }, 1200);
+
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // --- Scroll to Top ---
+            const btnTop = document.getElementById('btnScrollTop');
+            btnTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // --- Add subtle animation on input focus ---
+            document.querySelectorAll('.blank-input').forEach(inp => {
+                inp.addEventListener('focus', function() {
+                    this.closest('.question').style.borderLeftColor = '#2980b9';
+                    this.closest('.question').style.backgroundColor = '#f5f9fd';
+                });
+                inp.addEventListener('blur', function() {
+                    this.closest('.question').style.borderLeftColor = 'transparent';
+                    this.closest('.question').style.backgroundColor = '';
+                });
+            });
+
+            console.log(
+                '✅ IELTS Tense Exercises loaded! 100 questions ready. Use "Show Answer Key" to check your work.'
+                );
+        })();
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+
+
+
+</body>
+</html>
